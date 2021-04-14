@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | CookingBananza</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1920px; height: 1080px; background: #231F20"></canvas>
+    <script src="Build/New folder (4).loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/New folder (4).data.gz",
+        frameworkUrl: "Build/New folder (4).framework.js.gz",
+        codeUrl: "Build/New folder (4).wasm.gz",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "CookingBananza",
+        productVersion: "0.2",
+      });
+    </script>
+  </body>
+</html>
